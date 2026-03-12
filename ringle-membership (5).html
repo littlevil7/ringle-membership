@@ -1,0 +1,519 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Ringle AI - 멤버십</title><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"><style>:root{--bg:#080611;--bg2:#0e0b1c;--surface:#13102a;--purple:#7b5cf8;--accent:#b388ff;--text:#ede8ff;--muted:#7a73a0;--border:rgba(123,92,248,.18);--border2:rgba(123,92,248,.38);--gold:#f5c842;--green:#4ade80}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-family:'Noto Sans KR',sans-serif;overflow-x:hidden}nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1rem 2.5rem;display:flex;align-items:center;justify-content:space-between;background:rgba(8,6,17,.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}.logo{font-family:'Syne',sans-serif;font-size:1.25rem;font-weight:800}.logo em{color:var(--purple);font-style:italic}.navl{display:flex;gap:2rem}.navl a{color:var(--muted);text-decoration:none;font-family:'DM Mono',monospace;font-size:.74rem;letter-spacing:.12em;transition:.2s;text-transform:uppercase}.navl a:hover{color:var(--text)}.btn-start{background:var(--purple);color:#fff;border:none;padding:.5rem 1.3rem;font-family:'DM Mono',monospace;font-size:.73rem;letter-spacing:.1em;cursor:pointer;clip-path:polygon(6px 0,100% 0,calc(100% - 6px) 100%,0 100%);transition:.2s}.btn-start:hover{background:var(--accent)}.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:8rem 2rem 5rem;overflow:hidden}.orb{position:absolute;border-radius:50%;filter:blur(90px);animation:pulse 6s ease-in-out infinite;pointer-events:none}.orb1{width:500px;height:500px;background:radial-gradient(circle,rgba(123,92,248,.22),transparent 70%);top:-100px;right:-80px}.orb2{width:350px;height:350px;background:radial-gradient(circle,rgba(179,136,255,.14),transparent 70%);bottom:-60px;left:-60px;animation-delay:3s}.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(123,92,248,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(123,92,248,.07) 1px,transparent 1px);background-size:50px 50px;mask-image:radial-gradient(ellipse 80% 65% at 50% 50%,black 30%,transparent 100%)}@keyframes pulse{0%,100%{transform:scale(1);opacity:.8}50%{transform:scale(1.08);opacity:1}}.hc{position:relative;text-align:center;max-width:740px}.h-eye{display:inline-flex;align-items:center;gap:.6rem;font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.2em;color:var(--accent);border:1px solid rgba(179,136,255,.3);padding:.32rem 1rem;margin-bottom:2rem;animation:su .9s ease both}.h-eye::before,.h-eye::after{content:'';width:1.2rem;height:1px;background:var(--accent)}.hero h1{font-family:'Syne',sans-serif;font-size:clamp(3rem,8vw,5.6rem);font-weight:800;line-height:1.3;letter-spacing:-.03em;animation:su .9s .12s ease both}.hero h1 .it{color:var(--accent);font-style:italic;display:block}.hero-sub{margin-top:1.7rem;color:var(--muted);font-size:.98rem;line-height:1.85;animation:su .9s .24s ease both}.hero-btns{margin-top:2.6rem;display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;animation:su .9s .36s ease both}.btn-m{background:var(--purple);color:#fff;border:none;padding:1rem 2.4rem;font-family:'DM Mono',monospace;font-size:.8rem;letter-spacing:.1em;cursor:pointer;transition:.3s;text-decoration:none;display:inline-block}.btn-m:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(123,92,248,.4);background:var(--accent)}.btn-o{background:transparent;color:var(--muted);border:1px solid var(--border2);padding:1rem 2.4rem;font-family:'DM Mono',monospace;font-size:.8rem;cursor:pointer;transition:.3s;text-decoration:none;display:inline-block}.btn-o:hover{color:var(--text);border-color:var(--purple)}@keyframes su{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}section{padding:6.5rem 2rem}.sl{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.22em;color:var(--purple);text-transform:uppercase;display:flex;align-items:center;gap:.6rem;margin-bottom:.9rem}.sl::before{content:'';width:1.8rem;height:1px;background:var(--purple)}.st{font-family:'Syne',sans-serif;font-size:clamp(1.8rem,4.5vw,2.8rem);font-weight:800;line-height:1.08}.st em{color:var(--accent);font-style:italic}.pg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;max-width:980px;margin:3rem auto 0}@media(max-width:760px){.pg{grid-template-columns:1fr;max-width:420px}}.pc{background:var(--surface);border:1px solid var(--border);position:relative;overflow:hidden;transition:.3s}.pc:hover{border-color:var(--border2);transform:translateY(-5px);box-shadow:0 20px 60px rgba(0,0,0,.45)}.pc.rec{border-color:var(--purple);box-shadow:0 0 0 1px var(--purple),0 20px 60px rgba(123,92,248,.18)}.pc.rec:hover{box-shadow:0 0 0 1px var(--purple),0 26px 70px rgba(123,92,248,.32)}.pc-bar{height:3px;background:var(--border)}.pc.rec .pc-bar{background:linear-gradient(90deg,var(--purple),var(--accent))}.pc.prem .pc-bar{background:linear-gradient(90deg,var(--gold),#ff9a3c)}.bdg-w{position:absolute;top:1.3rem;right:1.3rem;display:flex;flex-direction:column;align-items:flex-end;gap:.3rem}.bdg{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.1em;padding:.18rem .5rem}.bdg.best{background:var(--purple);color:#fff}.bdg.hot{background:rgba(244,63,94,.88);color:#fff}.bdg.new{background:rgba(74,222,128,.12);color:var(--green);border:1px solid rgba(74,222,128,.28)}.pci{padding:2rem 1.8rem 1.8rem}.pct{font-family:'DM Mono',monospace;font-size:.67rem;letter-spacing:.2em;color:var(--muted);margin-bottom:.65rem;text-transform:uppercase}.pcp{font-family:'Syne',sans-serif;font-size:2.8rem;font-weight:800;line-height:.95;margin-bottom:.25rem}.pcp sup{font-size:1rem;vertical-align:top;margin-top:.45rem;display:inline-block;font-weight:400}.pcp2{color:var(--muted);font-family:'DM Mono',monospace;font-size:.73rem;margin-bottom:.28rem}.pct2{font-family:'DM Mono',monospace;font-size:.73rem;margin-bottom:1.5rem}.pc.rec .pct2{color:var(--accent)}.pc.prem .pct2{color:var(--gold)}.save{font-size:.62rem;padding:.1rem .38rem;margin-left:.35rem;border:1px solid}.sv-a{background:rgba(74,222,128,.12);color:var(--green);border-color:rgba(74,222,128,.25)}.sv-g{background:rgba(245,200,66,.1);color:var(--gold);border-color:rgba(245,200,66,.22)}.pdiv{height:1px;background:var(--border);margin-bottom:1.4rem}.fl{list-style:none;margin-bottom:1.7rem;display:flex;flex-direction:column;gap:.48rem}.fl li{font-size:.83rem;color:var(--muted);display:flex;align-items:flex-start;gap:.65rem;line-height:1.5}.fl li.on{color:var(--text)}.fl li.pl{color:var(--accent)}.fl li.go{color:var(--gold)}.fl li.off{opacity:.38;text-decoration:line-through}.fd{width:5px;height:5px;border-radius:50%;background:var(--border);flex-shrink:0;margin-top:.45rem}.fl li.on .fd{background:var(--purple)}.fl li.pl .fd{background:var(--accent)}.fl li.go .fd{background:var(--gold)}.fl li.off .fd{background:transparent;border:1px solid var(--border)}.pb{width:100%;padding:.9rem;font-family:'DM Mono',monospace;font-size:.76rem;letter-spacing:.09em;cursor:pointer;transition:.3s;border:1px solid var(--border);background:transparent;color:var(--muted)}.pb:hover{border-color:var(--purple);color:var(--text)}.pc.rec .pb{background:var(--purple);border-color:var(--purple);color:#fff}.pc.rec .pb:hover{background:var(--accent)}.pc.prem .pb{border-color:rgba(245,200,66,.35);color:var(--gold)}.pc.prem .pb:hover{background:rgba(245,200,66,.1)}.pc.rec::after{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(123,92,248,.07),transparent 60%)}table{width:100%;border-collapse:collapse;font-size:.85rem}thead th{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding:.9rem .75rem;text-align:center;border-bottom:1px solid var(--border);color:var(--muted)}thead th:first-child{text-align:left}.th-p{display:block;font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:800;color:var(--text);margin-top:.18rem}.th-s{font-size:.62rem;color:var(--muted);display:block;margin-top:.08rem}.hl .th-p{color:var(--accent)}.col-h{background:rgba(123,92,248,.045);border-left:1px solid var(--border);border-right:1px solid var(--border)}thead .col-h{border-top:1px solid var(--purple)}tbody tr{border-bottom:1px solid var(--border);transition:.15s}tbody tr:hover{background:rgba(123,92,248,.04)}tbody td{padding:.8rem .75rem;text-align:center;color:var(--muted)}tbody td:first-child{text-align:left;color:var(--text);font-size:.84rem}.ck{color:var(--purple)}.ckx{color:rgba(255,255,255,.18)}.cv{font-family:'DM Mono',monospace;font-size:.76rem}.cva{color:var(--accent)}.cvg{color:var(--gold)}tfoot td{padding:.65rem .75rem}.eb{background:var(--surface);border:1px solid var(--border);padding:2.6rem;display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start;max-width:840px;margin:2.5rem auto 0}@media(max-width:620px){.eb{grid-template-columns:1fr;gap:2rem}}.ed{color:var(--muted);font-size:.88rem;line-height:1.85;margin-top:1rem}.ed strong{color:var(--text)}.tw{margin-top:1.8rem;background:var(--bg2);border:1px solid var(--border);padding:1.3rem}.twl{font-family:'DM Mono',monospace;font-size:.67rem;letter-spacing:.14em;color:var(--muted);margin-bottom:.8rem;text-transform:uppercase}.tr2{display:grid;grid-template-columns:1fr 1fr;gap:.45rem}.tb{padding:.65rem;border:1px solid var(--border);background:transparent;color:var(--muted);font-family:'DM Mono',monospace;font-size:.72rem;cursor:pointer;transition:.2s;text-align:center}.tb.on{background:var(--purple);border-color:var(--purple);color:#fff}.tb:not(.on):hover{border-color:var(--purple);color:var(--text)}.tms{margin-top:.7rem;font-family:'DM Mono',monospace;font-size:.7rem;color:var(--accent);min-height:1rem}.tmd{font-size:.78rem;color:var(--muted);margin-top:.3rem;min-height:.9rem}.rtb{width:100%;padding:.65rem;font-family:'DM Mono',monospace;font-size:.7rem;cursor:pointer;transition:.2s;border:none}.tl2{position:relative;padding-left:1.8rem}.tl2::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:1px;background:var(--border)}.tli{position:relative;margin-bottom:1.6rem}.tli:last-child{margin-bottom:0}.tld{position:absolute;left:-1.8rem;top:3px;width:18px;height:18px;border-radius:50%;border:2px solid var(--border);background:var(--bg2);display:flex;align-items:center;justify-content:center}.tld.a{border-color:var(--purple);background:var(--purple)}.tld.b{border-color:var(--accent);background:rgba(179,136,255,.14)}.tldot{width:6px;height:6px;border-radius:50%;background:#fff}.tld2{font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.1em;color:var(--muted)}.tlt{font-size:.87rem;margin-top:.1rem}.tls{font-family:'DM Mono',monospace;font-size:.74rem;color:var(--accent);margin-top:.08rem}.tln{font-size:.77rem;color:var(--muted);margin-top:.08rem}.wg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;max-width:880px;margin:2.5rem auto 0}@media(max-width:620px){.wg{grid-template-columns:1fr}}.wc{background:var(--surface);border:1px solid var(--border);padding:1.8rem;transition:.2s}.wc:hover{border-color:var(--border2)}.wn{font-family:'Syne',sans-serif;font-size:3.2rem;font-weight:800;color:var(--border);line-height:1;margin-bottom:.7rem}.wt{font-size:.91rem;margin-bottom:.45rem}.wd{color:var(--muted);font-size:.82rem;line-height:1.7}footer{border-top:1px solid var(--border);padding:2.3rem;text-align:center;font-family:'DM Mono',monospace;font-size:.7rem;color:var(--muted)}.flo{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:800;margin-bottom:.35rem}.flo em{color:var(--purple);font-style:italic}.div{height:1px;background:var(--border)}.tc{text-align:center}.mb3{margin-bottom:3rem}.note{margin-top:.7rem;font-family:'DM Mono',monospace;font-size:.73rem;color:var(--muted)}
+/* ── 추가 섹션 스타일 ── */
+.section-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.67rem; letter-spacing: 0.25em; color: var(--purple-l); text-transform: uppercase; margin-bottom: 1.2rem; display: flex; align-items: center; gap: 1rem; }
+.section-eyebrow::before { content: ''; display: block; width: 2.5rem; height: 1px; background: linear-gradient(90deg, var(--purple), transparent); }
+.section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.5rem, 5vw, 5rem); font-weight: 300; line-height: 1; letter-spacing: -0.01em; margin-bottom: 1rem; }
+.section-title em { font-style: italic; color: var(--purple-l); }
+/* HOW IT WORKS */
+.how { background: var(--bg2); position: relative; overflow: hidden; }
+.how::before { content: ''; position: absolute; top: -200px; right: -200px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(124,58,237,0.08) 0%, transparent 70%); pointer-events: none; }
+.how-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 0; margin-top: 5rem; border: 1px solid var(--border); }
+.how-card { padding: 3rem 2rem; border-right: 1px solid var(--border); position: relative; overflow: hidden; transition: background 0.4s; }
+.how-card:last-child { border-right: none; }
+.how-card:hover { background: rgba(124,58,237,0.06); }
+.how-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--purple), var(--purple-l)); transform: scaleX(0); transform-origin: left; transition: transform 0.4s; }
+.how-card:hover::after { transform: scaleX(1); }
+.how-step { font-family: 'Cormorant Garamond', serif; font-size: 5rem; font-weight: 300; color: rgba(124,58,237,0.15); line-height: 1; margin-bottom: 1.5rem; transition: color 0.3s; }
+.how-card:hover .how-step { color: rgba(124,58,237,0.3); }
+.how-icon { font-size: 1.6rem; margin-bottom: 1rem; display: block; }
+.how-card h3 { font-size: 0.9rem; font-weight: 700; letter-spacing: 0.05em; margin-bottom: 1rem; color: var(--purple-xl); }
+.how-card p { font-size: 0.82rem; color: rgba(245,243,255,0.45); line-height: 1.8; font-weight: 300; }
+/* SERVICES */
+.services { background: var(--bg); }
+.services-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-top: 5rem; background: var(--border); }
+.svc-card { background: var(--bg); padding: 4rem 3rem; position: relative; overflow: hidden; transition: background 0.3s; }
+.svc-card:hover { background: var(--bg2); }
+.svc-glow { position: absolute; top: -80px; right: -80px; width: 280px; height: 280px; background: radial-gradient(circle, rgba(124,58,237,0.15) 0%, transparent 70%); pointer-events: none; opacity: 0; transition: opacity 0.4s; }
+.svc-card:hover .svc-glow { opacity: 1; }
+.svc-tag { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.2em; color: var(--purple-l); text-transform: uppercase; border: 1px solid var(--border2); padding: 0.3rem 0.8rem; display: inline-block; margin-bottom: 2rem; background: rgba(124,58,237,0.06); }
+.svc-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; font-weight: 300; margin-bottom: 1rem; letter-spacing: -0.01em; }
+.svc-card h3 em { font-style: italic; color: var(--purple-l); }
+.svc-desc { font-size: 0.85rem; color: rgba(245,243,255,0.5); line-height: 1.8; font-weight: 300; margin-bottom: 2.5rem; }
+.svc-list { list-style: none; display: flex; flex-direction: column; gap: 0.8rem; }
+.svc-list li { font-size: 0.82rem; color: rgba(245,243,255,0.65); display: flex; align-items: flex-start; gap: 0.8rem; font-weight: 300; line-height: 1.5; padding-bottom: 0.8rem; border-bottom: 1px solid var(--border); }
+.svc-list li:last-child { border-bottom: none; }
+.svc-list li::before { content: '→'; color: var(--purple-l); font-size: 0.75rem; flex-shrink: 0; margin-top: 0.1rem; font-family: 'DM Mono', monospace; }
+/* JOB TABS */
+.jobs { background: var(--bg2); }
+.tab-nav { display: flex; gap: 0; margin-top: 4rem; overflow-x: auto; scrollbar-width: none; border-bottom: 1px solid var(--border); }
+.tab-nav::-webkit-scrollbar { display: none; }
+.tab-btn { padding: 1rem 2rem; font-family: 'DM Mono', monospace; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mid); cursor: pointer; border: none; background: none; border-bottom: 2px solid transparent; margin-bottom: -1px; white-space: nowrap; transition: color 0.2s, border-color 0.2s; flex-shrink: 0; }
+.tab-btn.active { color: var(--purple-l); border-bottom-color: var(--purple); }
+.tab-btn:hover:not(.active) { color: var(--lavender); }
+.tab-pane { display: none; padding-top: 4rem; }
+.tab-pane.active { display: block; }
+.job-meta { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 4rem; }
+.job-title-row { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 300; margin-bottom: 1rem; }
+.job-title-row em { font-style: italic; color: var(--purple-l); }
+.job-desc-text { font-size: 0.88rem; color: rgba(245,243,255,0.5); line-height: 1.8; font-weight: 300; max-width: 600px; }
+.job-header-row { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 3rem; }
+/* job keywords grid (replaces company cards) */
+.job-keywords { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
+.job-kw-card { border: 1px solid var(--border); padding: 1.8rem; background: var(--bg); transition: all 0.3s; cursor: default; }
+.job-kw-card:hover { border-color: var(--border2); background: rgba(124,58,237,0.04); transform: translateY(-2px); }
+.kw-icon { font-size: 1.5rem; margin-bottom: 1rem; display: block; }
+.kw-title { font-size: 0.88rem; font-weight: 700; color: var(--purple-xl); margin-bottom: 0.5rem; }
+.kw-desc { font-size: 0.78rem; color: rgba(245,243,255,0.45); line-height: 1.7; font-weight: 300; }
+.kw-tags { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.35rem; padding-top: 0.8rem; border-top: 1px solid var(--border); }
+.kw-tag { font-size: 0.65rem; color: rgba(245,243,255,0.4); background: rgba(255,255,255,0.03); padding: 0.18rem 0.6rem; border: 1px solid transparent; font-weight: 300; }
+.job-kw-card:hover .kw-tag { border-color: var(--border); color: rgba(245,243,255,0.6); }
+.how-grid { grid-template-columns: repeat(2,1fr); }
+.services-layout { grid-template-columns: 1fr; }
+.how-grid { grid-template-columns: 1fr; }
+</style></head><body>
+<nav><div class="logo">Ringle <em>AI</em></div><div class="navl"><a href="#plans">플랜</a><a href="#compare">비교</a><a href="#extend">연장</a><a href="#mingle">밍글</a></div><button class="btn-start" onclick="document.getElementById('plans').scrollIntoView({behavior:'smooth'})">지금 시작하기</button></nav>
+<div class="hero"><div class="orb orb1"></div><div class="orb orb2"></div><div class="hero-grid"></div><div class="hc"><div class="h-eye">AI-POWERED ENGLISH · FOR JOB SEEKERS ONLY</div><h1>취업 영어,<span class="it">전략적으로.</span></h1><p class="hero-sub">직무별·채용 시즌에 맞춘 Ringle AI 단독 멤버십.<br>1개월로 시작하고, 3개월·6개월로 자유롭게 연장하세요.</p><div class="hero-btns"><a href="#plans" class="btn-m">플랜 선택하기</a><a href="#compare" class="btn-o">플랜 비교하기</a></div></div></div>
+<!-- HOW IT WORKS -->
+<section style="padding:6.5rem 2rem;background:var(--bg);">
+  <div style="max-width:900px;margin:0 auto;">
+    <div style="font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.22em;color:var(--purple);text-transform:uppercase;display:flex;align-items:center;gap:.6rem;margin-bottom:.9rem;"><span style="display:inline-block;width:1.8rem;height:1px;background:var(--purple)"></span>How It Works</div>
+    <h2 style="font-family:'Syne',sans-serif;font-size:clamp(1.8rem,4.5vw,2.8rem);font-weight:800;line-height:1.08;margin-bottom:3rem;">4단계로 끝내는<br><em style="color:var(--accent);font-style:italic;">취업 영어</em></h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;">
+      <div style="background:var(--surface);border:1px solid var(--border);padding:2.2rem;position:relative;overflow:hidden;">
+        <div style="font-family:'Syne',sans-serif;font-size:4rem;font-weight:800;color:rgba(123,92,248,.13);line-height:1;position:absolute;top:1rem;left:1.5rem;pointer-events:none;">01</div>
+        <div style="position:relative;padding-top:1.5rem;">
+          <div style="font-size:2rem;margin-bottom:1rem;">🎯</div>
+          <h3 style="font-size:1rem;font-weight:700;margin-bottom:.6rem;">직무 선택</h3>
+          <p style="color:var(--muted);font-size:.85rem;line-height:1.7;">마케팅, IT 등 내가 지원할 직무 트랙을 선택하고 멤버십을 시작합니다.</p>
+        </div>
+      </div>
+      <div style="background:var(--surface);border:1px solid var(--border);padding:2.2rem;position:relative;overflow:hidden;">
+        <div style="font-family:'Syne',sans-serif;font-size:4rem;font-weight:800;color:rgba(123,92,248,.13);line-height:1;position:absolute;top:1rem;left:1.5rem;pointer-events:none;">02</div>
+        <div style="position:relative;padding-top:1.5rem;">
+          <div style="font-size:2rem;margin-bottom:1rem;">📚</div>
+          <h3 style="font-size:1rem;font-weight:700;margin-bottom:.6rem;">맞춤 커리큘럼</h3>
+          <p style="color:var(--muted);font-size:.85rem;line-height:1.7;">직무 전문 영어 표현, 면접 시나리오, 비즈니스 어휘를 집중 학습합니다.</p>
+        </div>
+      </div>
+      <div style="background:var(--surface);border:1px solid rgba(123,92,248,.35);padding:2.2rem;position:relative;overflow:hidden;">
+        <div style="font-family:'Syne',sans-serif;font-size:4rem;font-weight:800;color:rgba(123,92,248,.13);line-height:1;position:absolute;top:1rem;left:1.5rem;pointer-events:none;">03</div>
+        <div style="position:relative;padding-top:1.5rem;">
+          <div style="font-size:2rem;margin-bottom:1rem;">🤖</div>
+          <h3 style="font-size:1rem;font-weight:700;margin-bottom:.6rem;">AI 튜터 + AI 전화영어</h3>
+          <p style="color:var(--muted);font-size:.85rem;line-height:1.7;">직무 맞춤 커리큘럼으로 학습 후, AI 전화영어로 실전 모의면접을 무제한 반복합니다.</p>
+        </div>
+      </div>
+      <div style="background:var(--surface);border:1px solid rgba(123,92,248,.35);padding:2.2rem;position:relative;overflow:hidden;">
+        <div style="font-family:'Syne',sans-serif;font-size:4rem;font-weight:800;color:rgba(123,92,248,.13);line-height:1;position:absolute;top:1rem;left:1.5rem;pointer-events:none;">04</div>
+        <div style="position:relative;padding-top:1.5rem;">
+          <div style="font-size:2rem;margin-bottom:1rem;">📈</div>
+          <h3 style="font-size:1rem;font-weight:700;margin-bottom:.6rem;">성과 트래킹 & 피드백</h3>
+          <p style="color:var(--muted);font-size:.85rem;line-height:1.7;">면접 시뮬레이션을 AI가 분석해 발음·유창성·내용의 점수와 개선 포인트를 제공합니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="section-eyebrow">Core Services</div>
+  <h2 class="section-title">두 가지 핵심 서비스,<br><em>무제한</em></h2>
+  <div class="services-layout">
+    <div class="svc-card">
+      <div class="svc-glow"></div>
+      <div class="svc-tag">AI Phone English · Unlimited</div>
+      <h3>AI <em>전화영어</em></h3>
+      <p class="svc-desc">영어 면접을 전화 통화 형식으로 시뮬레이션합니다. 실제 면접관처럼 질문하고 즉각적인 피드백을 주는 AI와 언제든, 몇 번이든 연습하세요.</p>
+      <ul class="svc-list">
+        <li>직무별·기업별 맞춤 면접 시나리오</li>
+        <li>실시간 발음 교정 및 유창성 피드백</li>
+        <li>STAR 기법 답변 구조화 코칭</li>
+        <li>녹음 저장 및 진도 분석 리포트</li>
+        <li>난이도 조절 (초급 → 네이티브 레벨)</li>
+      </ul>
+    </div>
+    <div class="svc-card">
+      <div class="svc-glow"></div>
+      <div class="svc-tag">AI Tutor · Unlimited</div>
+      <h3>AI <em>튜터</em></h3>
+      <p class="svc-desc">직무 특화 영어를 체계적으로 학습합니다. 채용 공고 분석부터 영문 자소서 첨삭, 직무 전문 어휘까지 AI 튜터가 1:1로 완벽 지원합니다.</p>
+      <ul class="svc-list">
+        <li>직무 전문용어 & 비즈니스 영어 커리큘럼</li>
+        <li>영문 자기소개서 첨삭 및 피드백</li>
+        <li>기업별 채용 공고 영어 분석</li>
+        <li>약점 파악 후 개인화 학습 플랜 생성</li>
+        <li>산업별 최신 트렌드 영어 콘텐츠</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- JOB CATEGORIES -->
+<section class="jobs" id="jobs" style="padding:6.5rem 2rem;background:var(--bg2);">
+  <div style="max-width:900px;margin:0 auto;">
+    <div style="font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.22em;color:var(--purple);text-transform:uppercase;display:flex;align-items:center;gap:.6rem;margin-bottom:.9rem;"><span style="display:inline-block;width:1.8rem;height:1px;background:var(--purple)"></span>직무별 커리큘럼</div>
+    <h2 style="font-family:'Syne',sans-serif;font-size:clamp(1.8rem,4.5vw,2.8rem);font-weight:800;line-height:1.08;margin-bottom:2.5rem;">내 직무를<br><em style="color:var(--accent);font-style:italic;">선택하세요</em></h2>
+
+    <div style="display:flex;gap:0;border-bottom:1px solid var(--border);margin-bottom:0;overflow-x:auto;">
+      <button class="tab-btn active" onclick="switchTab('it',this)" style="padding:.75rem 1.4rem;font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;background:none;border:none;border-bottom:2px solid var(--purple);color:var(--text);cursor:pointer;white-space:nowrap;transition:.2s;">IT</button>
+      <button class="tab-btn" onclick="switchTab('mkt',this)" style="padding:.75rem 1.4rem;font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;background:none;border:none;border-bottom:2px solid transparent;color:var(--muted);cursor:pointer;white-space:nowrap;transition:.2s;">마케팅</button>
+      <button class="tab-btn" onclick="switchTab('mgmt',this)" style="padding:.75rem 1.4rem;font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;background:none;border:none;border-bottom:2px solid transparent;color:var(--muted);cursor:pointer;white-space:nowrap;transition:.2s;">경영관리</button>
+      <button class="tab-btn" onclick="switchTab('sales',this)" style="padding:.75rem 1.4rem;font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;background:none;border:none;border-bottom:2px solid transparent;color:var(--muted);cursor:pointer;white-space:nowrap;transition:.2s;">영업</button>
+      <button class="tab-btn" onclick="switchTab('rd',this)" style="padding:.75rem 1.4rem;font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;background:none;border:none;border-bottom:2px solid transparent;color:var(--muted);cursor:pointer;white-space:nowrap;transition:.2s;">R&D·생산</button>
+      <button class="tab-btn" onclick="switchTab('svc',this)" style="padding:.75rem 1.4rem;font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;background:none;border:none;border-bottom:2px solid transparent;color:var(--muted);cursor:pointer;white-space:nowrap;transition:.2s;">서비스직</button>
+    </div>
+
+    <div style="padding-top:2.5rem;">
+  <div class="tab-pane active" id="pane-it">
+    <div style="margin-bottom:2.5rem;">
+      <div style="font-size:1.6rem;font-weight:800;margin-bottom:.6rem;">IT·개발 <em style="font-family:'Syne',sans-serif;color:var(--accent);font-style:italic;">Engineering</em></div>
+      <p style="color:var(--muted);font-size:.88rem;line-height:1.75;max-width:600px;">소프트웨어 개발, AI/ML, 데이터 사이언스, PM 직무를 준비합니다. 기술 면접 영어, 알고리즘 설명, 영어 코딩 인터뷰를 집중 학습합니다.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;">
+<div style="background:var(--bg);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.9rem;transition:.2s;" onmouseover="this.style.borderColor='rgba(123,92,248,.5)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.6rem;">💻</div>
+          <div style="font-size:.95rem;font-weight:700;color:var(--accent);">Coding Interview 영어</div>
+          <p style="font-size:.83rem;color:var(--muted);line-height:1.7;flex:1;">알고리즘, 자료구조, 시스템 디자인을 영어로 설명하는 법을 단계별로 훈련합니다.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">System Design</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Algorithm Explain</span></div>
+        </div>
+<div style="background:var(--bg);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.9rem;transition:.2s;" onmouseover="this.style.borderColor='rgba(123,92,248,.5)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.6rem;">🤖</div>
+          <div style="font-size:.95rem;font-weight:700;color:var(--accent);">AI/ML 기술 발표</div>
+          <p style="font-size:.83rem;color:var(--muted);line-height:1.7;flex:1;">모델 아키텍처, 논문 발표, 팀 내 기술 리뷰를 영어로 진행하는 스킬을 키웁니다.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">AI Research English</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Paper Review</span></div>
+        </div>
+<div style="background:var(--bg);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.9rem;transition:.2s;" onmouseover="this.style.borderColor='rgba(123,92,248,.5)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.6rem;">🎯</div>
+          <div style="font-size:.95rem;font-weight:700;color:var(--accent);">Behavioral Interview</div>
+          <p style="font-size:.83rem;color:var(--muted);line-height:1.7;flex:1;">Leadership Principles, STAR 메소드, 글로벌 빅테크 면접 패턴을 영어로 완벽 준비합니다.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">STAR Method</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Leadership Principles</span></div>
+        </div>
+<div style="background:var(--bg);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.9rem;transition:.2s;" onmouseover="this.style.borderColor='rgba(123,92,248,.5)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.6rem;">📱</div>
+          <div style="font-size:.95rem;font-weight:700;color:var(--accent);">Product Management</div>
+          <p style="font-size:.83rem;color:var(--muted);line-height:1.7;flex:1;">PRD 작성, 로드맵 발표, 크로스펑셔널 팀 커뮤니케이션 영어를 체계적으로 학습합니다.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">PRD Writing</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Roadmap Presentation</span></div>
+        </div>
+    </div>
+  </div>
+  <div class="tab-pane" id="pane-mkt">
+    <div style="margin-bottom:2.5rem;">
+      <div style="font-size:1.6rem;font-weight:800;margin-bottom:.6rem;">마케팅 <em style="font-family:'Syne',sans-serif;color:var(--accent);font-style:italic;">Marketing</em></div>
+      <p style="color:var(--muted);font-size:.88rem;line-height:1.75;max-width:600px;">글로벌 브랜드 마케팅, 디지털 마케팅, CRM 직무를 준비합니다. 영어 PT 스킬, 글로벌 캠페인 케이스 스터디, 마케팅 전문 용어를 집중 학습합니다.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;">
+<div style="background:var(--bg);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.9rem;transition:.2s;" onmouseover="this.style.borderColor='rgba(123,92,248,.5)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.6rem;">📢</div>
+          <div style="font-size:.95rem;font-weight:700;color:var(--accent);">글로벌 브랜드 전략</div>
+          <p style="font-size:.83rem;color:var(--muted);line-height:1.7;flex:1;">브랜드 포지셔닝, 글로벌 캠페인 기획, 영어 PT 발표 스킬을 집중 트레이닝합니다.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Brand Strategy</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">PT Skills</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">영어 발표</span></div>
+        </div>
+<div style="background:var(--bg);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.9rem;transition:.2s;" onmouseover="this.style.borderColor='rgba(123,92,248,.5)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.6rem;">📊</div>
+          <div style="font-size:.95rem;font-weight:700;color:var(--accent);">디지털 마케팅</div>
+          <p style="font-size:.83rem;color:var(--muted);line-height:1.7;flex:1;">퍼포먼스 마케팅, 그로스해킹, 데이터 기반 의사결정을 영어로 설명하는 법을 배웁니다.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Performance Marketing</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Growth Hacking</span></div>
+        </div>
+<div style="background:var(--bg);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.9rem;transition:.2s;" onmouseover="this.style.borderColor='rgba(123,92,248,.5)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.6rem;">🤝</div>
+          <div style="font-size:.95rem;font-weight:700;color:var(--accent);">Consumer Insight</div>
+          <p style="font-size:.83rem;color:var(--muted);line-height:1.7;flex:1;">소비자 조사 설계, 인사이트 도출, 영어 리포팅 스킬을 체계적으로 학습합니다.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Research Design</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Insight Report</span></div>
+        </div>
+<div style="background:var(--bg);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.9rem;transition:.2s;" onmouseover="this.style.borderColor='rgba(123,92,248,.5)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.6rem;">🌐</div>
+          <div style="font-size:.95rem;font-weight:700;color:var(--accent);">글로벌 캠페인</div>
+          <p style="font-size:.83rem;color:var(--muted);line-height:1.7;flex:1;">해외 팀 협업, 글로벌 미디어 플래닝, 영어 브리핑 및 크리에이티브 디렉션을 연습합니다.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Media Planning</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Creative Brief</span></div>
+        </div>
+    </div>
+  </div>
+  <div class="tab-pane" id="pane-mgmt">
+    <div style="margin-bottom:2.5rem;">
+      <div style="font-size:1.6rem;font-weight:800;margin-bottom:.6rem;">경영관리 <em style="font-family:'Syne',sans-serif;color:var(--accent);font-style:italic;">Business Management</em></div>
+      <p style="color:var(--muted);font-size:.88rem;line-height:1.75;max-width:600px;">경영기획, 인사, 재무, 신사업개발 직무를 준비합니다. 영어 전략 보고서, 해외 파트너 커뮤니케이션, 비즈니스 케이스 발표를 집중 학습합니다.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;">
+<div style="background:var(--bg);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.9rem;transition:.2s;" onmouseover="this.style.borderColor='rgba(123,92,248,.5)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.6rem;">🗺️</div>
+          <div style="font-size:.95rem;font-weight:700;color:var(--accent);">글로벌 전략 기획</div>
+          <p style="font-size:.83rem;color:var(--muted);line-height:1.7;flex:1;">전략 보고서 작성, 해외 파트너 협상, 비즈니스 케이스 발표를 영어로 완성합니다.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Strategic Planning</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Business Report</span></div>
+        </div>
+<div style="background:var(--bg);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.9rem;transition:.2s;" onmouseover="this.style.borderColor='rgba(123,92,248,.5)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.6rem;">📋</div>
+          <div style="font-size:.95rem;font-weight:700;color:var(--accent);">비즈니스 케이스 발표</div>
+          <p style="font-size:.83rem;color:var(--muted);line-height:1.7;flex:1;">데이터 기반 영어 발표, 의사결정 설득 커뮤니케이션 스킬을 훈련합니다.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Presentation</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Case Study</span></div>
+        </div>
+<div style="background:var(--bg);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.9rem;transition:.2s;" onmouseover="this.style.borderColor='rgba(123,92,248,.5)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.6rem;">👥</div>
+          <div style="font-size:.95rem;font-weight:700;color:var(--accent);">HR & 조직 커뮤니케이션</div>
+          <p style="font-size:.83rem;color:var(--muted);line-height:1.7;flex:1;">인사기획, 채용 인터뷰, 조직 문화 관련 영어 커뮤니케이션을 집중 학습합니다.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">People Management</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Recruitment</span></div>
+        </div>
+<div style="background:var(--bg);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.9rem;transition:.2s;" onmouseover="this.style.borderColor='rgba(123,92,248,.5)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.6rem;">💰</div>
+          <div style="font-size:.95rem;font-weight:700;color:var(--accent);">재무·회계 영어</div>
+          <p style="font-size:.83rem;color:var(--muted);line-height:1.7;flex:1;">재무 보고서 해석, 투자자 영어, 예산 기획 발표를 준비합니다.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Finance English</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Accounting</span></div>
+        </div>
+    </div>
+  </div>
+  <div class="tab-pane" id="pane-sales">
+    <div style="margin-bottom:2.5rem;">
+      <div style="font-size:1.6rem;font-weight:800;margin-bottom:.6rem;">영업 <em style="font-family:'Syne',sans-serif;color:var(--accent);font-style:italic;">Sales</em></div>
+      <p style="color:var(--muted);font-size:.88rem;line-height:1.75;max-width:600px;">B2B/B2C 영업, 글로벌 세일즈, 어카운트 매니지먼트 직무를 준비합니다. 영어 세일즈 피치, 제안서 발표, 협상 스킬을 집중 학습합니다.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;">
+<div style="background:var(--bg);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.9rem;transition:.2s;" onmouseover="this.style.borderColor='rgba(123,92,248,.5)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.6rem;">🎯</div>
+          <div style="font-size:.95rem;font-weight:700;color:var(--accent);">Sales Pitch 영어</div>
+          <p style="font-size:.83rem;color:var(--muted);line-height:1.7;flex:1;">제품·서비스 영어 피칭, 가치 제안 스토리텔링, 고객 니즈 발굴 대화를 훈련합니다.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Value Proposition</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Pitching</span></div>
+        </div>
+<div style="background:var(--bg);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.9rem;transition:.2s;" onmouseover="this.style.borderColor='rgba(123,92,248,.5)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.6rem;">🤝</div>
+          <div style="font-size:.95rem;font-weight:700;color:var(--accent);">협상 영어</div>
+          <p style="font-size:.83rem;color:var(--muted);line-height:1.7;flex:1;">계약 협상, 가격 조율, 윈-윈 제안을 영어로 자신감 있게 주도하는 법을 배웁니다.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Negotiation</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Closing Deals</span></div>
+        </div>
+<div style="background:var(--bg);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.9rem;transition:.2s;" onmouseover="this.style.borderColor='rgba(123,92,248,.5)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.6rem;">📊</div>
+          <div style="font-size:.95rem;font-weight:700;color:var(--accent);">Account Management</div>
+          <p style="font-size:.83rem;color:var(--muted);line-height:1.7;flex:1;">고객 관계 관리, 영어 QBR 발표, 업셀링·크로스셀링 커뮤니케이션을 학습합니다.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">QBR</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Upsell/Cross-sell</span></div>
+        </div>
+<div style="background:var(--bg);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.9rem;transition:.2s;" onmouseover="this.style.borderColor='rgba(123,92,248,.5)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.6rem;">🌐</div>
+          <div style="font-size:.95rem;font-weight:700;color:var(--accent);">글로벌 세일즈</div>
+          <p style="font-size:.83rem;color:var(--muted);line-height:1.7;flex:1;">해외 바이어 미팅, 무역 협상, 글로벌 전시회 영어 커뮤니케이션을 실전 수준으로 키웁니다.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Global Buyer Meeting</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Trade Show</span></div>
+        </div>
+    </div>
+  </div>
+  <div class="tab-pane" id="pane-rd">
+    <div style="margin-bottom:2.5rem;">
+      <div style="font-size:1.6rem;font-weight:800;margin-bottom:.6rem;">R&D·생산 <em style="font-family:'Syne',sans-serif;color:var(--accent);font-style:italic;">R&D & Manufacturing</em></div>
+      <p style="color:var(--muted);font-size:.88rem;line-height:1.75;max-width:600px;">연구개발, 제품개발, 생산관리 직무를 준비합니다. 논문 발표, 특허 영어, 기술 협력 커뮤니케이션을 집중 학습합니다.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;">
+<div style="background:var(--bg);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.9rem;transition:.2s;" onmouseover="this.style.borderColor='rgba(123,92,248,.5)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.6rem;">🔬</div>
+          <div style="font-size:.95rem;font-weight:700;color:var(--accent);">논문·연구 발표</div>
+          <p style="font-size:.83rem;color:var(--muted);line-height:1.7;flex:1;">학술 영어, 국제 컨퍼런스 발표, 연구 결과 설명을 자신감 있게 진행하는 법을 배웁니다.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Academic English</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Conference Presentation</span></div>
+        </div>
+<div style="background:var(--bg);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.9rem;transition:.2s;" onmouseover="this.style.borderColor='rgba(123,92,248,.5)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.6rem;">📄</div>
+          <div style="font-size:.95rem;font-weight:700;color:var(--accent);">특허 & 기술 문서</div>
+          <p style="font-size:.83rem;color:var(--muted);line-height:1.7;flex:1;">영문 특허 명세서, 기술 제안서, IP 관련 영어 커뮤니케이션 스킬을 체계적으로 학습합니다.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Patent English</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Technical Writing</span></div>
+        </div>
+<div style="background:var(--bg);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.9rem;transition:.2s;" onmouseover="this.style.borderColor='rgba(123,92,248,.5)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.6rem;">🤝</div>
+          <div style="font-size:.95rem;font-weight:700;color:var(--accent);">글로벌 기술 협력</div>
+          <p style="font-size:.83rem;color:var(--muted);line-height:1.7;flex:1;">해외 연구기관 협업, 공동개발 협약, 글로벌 R&D 파트너 미팅 영어를 훈련합니다.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Joint Development</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Research Collaboration</span></div>
+        </div>
+<div style="background:var(--bg);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.9rem;transition:.2s;" onmouseover="this.style.borderColor='rgba(123,92,248,.5)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.6rem;">⚙️</div>
+          <div style="font-size:.95rem;font-weight:700;color:var(--accent);">기술 기획 발표</div>
+          <p style="font-size:.83rem;color:var(--muted);line-height:1.7;flex:1;">기술 로드맵, R&D 투자 제안, 기술 타당성 검토를 영어로 임원·외부에 발표하는 법을 배웁니다.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Tech Roadmap</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">R&D Investment Case</span></div>
+        </div>
+    </div>
+  </div>
+  <div class="tab-pane" id="pane-svc">
+    <div style="margin-bottom:2.5rem;">
+      <div style="font-size:1.6rem;font-weight:800;margin-bottom:.6rem;">서비스직 <em style="font-family:'Syne',sans-serif;color:var(--accent);font-style:italic;">Service & Operations</em></div>
+      <p style="color:var(--muted);font-size:.88rem;line-height:1.75;max-width:600px;">호텔, 항공, 유통, 고객서비스 직군을 준비합니다. 글로벌 고객 응대 영어, 서비스 커뮤니케이션, 영어 인터뷰 스킬을 집중 학습합니다.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;">
+<div style="background:var(--bg);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.9rem;transition:.2s;" onmouseover="this.style.borderColor='rgba(123,92,248,.5)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.6rem;">✈️</div>
+          <div style="font-size:.95rem;font-weight:700;color:var(--accent);">항공·호텔 서비스 영어</div>
+          <p style="font-size:.83rem;color:var(--muted);line-height:1.7;flex:1;">글로벌 고객 응대, 인플라이트 서비스, 호텔 체크인·컴플레인 처리 영어를 훈련합니다.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Hospitality English</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Guest Service</span></div>
+        </div>
+<div style="background:var(--bg);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.9rem;transition:.2s;" onmouseover="this.style.borderColor='rgba(123,92,248,.5)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.6rem;">🤝</div>
+          <div style="font-size:.95rem;font-weight:700;color:var(--accent);">글로벌 고객 응대</div>
+          <p style="font-size:.83rem;color:var(--muted);line-height:1.7;flex:1;">외국인 고객 응대, 민원 처리, 서비스 리커버리 영어를 단계별로 학습합니다.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Customer Service</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Complaint Handling</span></div>
+        </div>
+<div style="background:var(--bg);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.9rem;transition:.2s;" onmouseover="this.style.borderColor='rgba(123,92,248,.5)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.6rem;">💬</div>
+          <div style="font-size:.95rem;font-weight:700;color:var(--accent);">서비스 커뮤니케이션</div>
+          <p style="font-size:.83rem;color:var(--muted);line-height:1.7;flex:1;">유통·리테일·F&B 현장에서 쓰는 실전 비즈니스 영어를 집중 훈련합니다.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Retail English</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">F&B Communication</span></div>
+        </div>
+<div style="background:var(--bg);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.9rem;transition:.2s;" onmouseover="this.style.borderColor='rgba(123,92,248,.5)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.6rem;">🌐</div>
+          <div style="font-size:.95rem;font-weight:700;color:var(--accent);">영어 면접 스킬</div>
+          <p style="font-size:.83rem;color:var(--muted);line-height:1.7;flex:1;">서비스직 영어 자기소개, 지원 동기, 상황별 면접 답변을 완성합니다.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Interview Skills</span><span style="font-family:'DM Mono',monospace;font-size:.65rem;padding:.25rem .6rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.2);color:var(--accent)">Self Introduction</span></div>
+        </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</section>
+<section id="plans"><div class="tc mb3"><div class="sl" style="justify-content:center">PRICING PLANS</div><h2 class="st">채용 시즌에 맞춘<br><em>플렉시블 플랜</em></h2></div><div class="pg">
+<div class="pc"><div class="pc-bar"></div><div class="bdg-w"><span class="bdg new">STARTER</span></div><div class="pci"><div class="pct">1개월</div><div class="pcp"><sup>₩</sup>39,800</div><div class="pcp2">/ 월 (1개월 결제)</div><div class="pct2">연장 시 ₩29,800/월 적용</div><div class="pdiv"></div><ul class="fl"><li class="on"><span class="fd"></span>직무 1개 선택</li><li class="on"><span class="fd"></span>AI 전화영어 무제한</li><li class="on"><span class="fd"></span>AI 튜터 무제한</li><li><span class="fd"></span>면접 녹음 저장 1개</li><li class="on"><span class="fd"></span>AI 발음·유창성 분석</li><li class="on"><span class="fd"></span>주간 학습 리포트</li><li class="off"><span class="fd"></span>Mingle with Ringle 추첨 대상</li></ul><button class="pb" onclick="document.getElementById('extend').scrollIntoView({behavior:'smooth'})">1개월 시작하기</button></div></div>
+<div class="pc rec"><div class="pc-bar"></div><div class="bdg-w"><span class="bdg best">BEST VALUE</span><span class="bdg hot">추천 ★</span></div><div class="pci"><div class="pct">3개월</div><div class="pcp"><sup>₩</sup>29,800</div><div class="pcp2">/ 월 (3개월 = ₩89,400)</div><div class="pct2">1개월 대비 <span class="save sv-a">월 -₩10,000</span></div><div class="pdiv"></div><ul class="fl"><li class="on"><span class="fd"></span>직무 2개 선택</li><li class="on"><span class="fd"></span>AI 전화영어 무제한</li><li class="on"><span class="fd"></span>AI 튜터 무제한</li><li class="pl"><span class="fd"></span>면접 녹음 무제한 저장 ✦</li><li class="pl"><span class="fd"></span>AI 발음·유창성 분석 ✦</li><li class="pl"><span class="fd"></span>주간 학습 리포트 ✦</li><li class="pl"><span class="fd"></span>Mingle with Ringle 추첨 대상 &#10022;</li></ul><button class="pb">3개월 시작하기</button></div></div>
+<div class="pc prem"><div class="pc-bar"></div><div class="bdg-w"><span class="bdg" style="background:rgba(245,200,66,.13);color:var(--gold);border:1px solid rgba(245,200,66,.28)">ALL-IN</span></div><div class="pci"><div class="pct">6개월</div><div class="pcp" style="color:var(--gold)"><sup style="color:var(--gold)">₩</sup>24,800</div><div class="pcp2">/ 월 (6개월 = ₩148,800)</div><div class="pct2" style="color:var(--gold)">3개월 대비 <span class="save sv-g">월 -₩5,000</span></div><div class="pdiv"></div><ul class="fl"><li class="on"><span class="fd"></span>직무 무제한 선택 ✦</li><li class="on"><span class="fd"></span>AI 전화영어 무제한</li><li class="on"><span class="fd"></span>AI 튜터 무제한</li><li class="pl"><span class="fd"></span>면접 녹음 무제한 저장 ✦</li><li class="pl"><span class="fd"></span>AI 발음·유창성 분석 ✦</li><li class="go"><span class="fd" style="background:var(--gold)"></span>주간 학습 리포트 ✦</li><li class="go"><span class="fd" style="background:var(--gold)"></span>Mingle with Ringle 추첨 대상 ✦</li></ul><button class="pb">6개월 시작하기</button></div></div>
+</div></section>
+<section id="compare" style="background:var(--bg2)"><div class="tc mb3"><div class="sl" style="justify-content:center">PLAN COMPARISON</div><h2 class="st">플랜 한눈에 <em>비교</em></h2></div><div style="max-width:900px;margin:0 auto;overflow-x:auto"><table><thead><tr><th style="width:32%">기능</th><th>STARTER<br><span class="th-p">₩39,800</span><span class="th-s">/ 월 · 1개월</span></th><th class="hl col-h">SEASON<br><span class="th-p">₩29,800</span><span class="th-s">/ 월 · 3개월 ★ 추천</span></th><th>ALL-IN<br><span class="th-p" style="color:var(--gold)">₩24,800</span><span class="th-s">/ 월 · 6개월</span></th></tr></thead><tbody><tr><td>직무 선택</td><td><span class="cv">1개</span></td><td class="col-h"><span class="cv cva">2개</span></td><td><span class="cv cvg">무제한</span></td></tr><tr><td>AI 전화영어</td><td><span class="ck">✓</span> 무제한</td><td class="col-h"><span class="ck">✓</span> 무제한</td><td><span class="ck">✓</span> 무제한</td></tr><tr><td>AI 튜터</td><td><span class="ck">✓</span> 무제한</td><td class="col-h"><span class="ck">✓</span> 무제한</td><td><span class="ck">✓</span> 무제한</td></tr><tr><td>면접 녹음 저장</td><td><span class="cv">1개</span></td><td class="col-h"><span class="cv cva">무제한</span></td><td><span class="cv cvg">무제한</span></td></tr><tr><td>AI 발음·유창성 분석</td><td><span class="ck">✓</span></td><td class="col-h"><span class="ck">✓</span></td><td><span class="ck">✓</span></td></tr><tr><td>주간 학습 리포트</td><td><span class="ck">✓</span></td><td class="col-h"><span class="ck">✓</span></td><td><span class="ck" style="color:var(--gold)">✓</span></td></tr><tr><td>Mingle with Ringle 추첨</td><td><span class="ckx">&#10005;</span></td><td class="col-h"><span class="ck">&#10003;</span></td><td><span class="ck" style="color:var(--gold)">&#10003;</span></td></tr><tr><td>연장 가능</td><td><span class="ck">✓</span> 자동/수동</td><td class="col-h"><span class="ck">✓</span> 자동/수동</td><td><span class="ck">✓</span> 자동/수동</td></tr></tbody><tfoot><tr><td></td><td><button class="rtb" style="background:transparent;border:1px solid var(--border);color:var(--muted);font-family:'DM Mono',monospace;font-size:.7rem;padding:.65rem;cursor:pointer;transition:.2s" onmouseover="this.style.borderColor='var(--purple)';this.style.color='var(--text)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">시작하기</button></td><td class="col-h"><button class="rtb" style="background:var(--purple);border:1px solid var(--purple);color:#fff;font-family:'DM Mono',monospace;font-size:.7rem;padding:.65rem;cursor:pointer;transition:.2s" onmouseover="this.style.background='var(--accent)'" onmouseout="this.style.background='var(--purple)'">시작하기 ★</button></td><td><button class="rtb" style="background:transparent;border:1px solid rgba(245,200,66,.33);color:var(--gold);font-family:'DM Mono',monospace;font-size:.7rem;padding:.65rem;cursor:pointer;transition:.2s" onmouseover="this.style.background='rgba(245,200,66,.1)'" onmouseout="this.style.background='transparent'">시작하기</button></td></tr></tfoot></table></div></section>
+<section id="extend"><div style="max-width:840px;margin:0 auto"><div class="sl">EXTENSION SYSTEM</div><h2 class="st">1개월 시작 후<br><em>언제든 연장</em></h2></div><div class="eb"><div><p class="ed">부담 없이 1개월로 시작하고, 면접 결과나 공고 일정에 맞게 <strong>자유롭게 연장</strong>하세요. 연장 시 더 저렴한 요금이 즉시 적용됩니다.</p><div class="tw"><div class="twl">연장 방식 선택</div><div class="tr2"><button class="tb on" id="ta" onclick="st('auto')">자동 연장</button><button class="tb" id="tm" onclick="st('manual')">수동 연장</button></div><div class="tms" id="tmsg">만료 7일 전 알림 · 자동으로 다음 플랜 전환</div><div class="tmd" id="tmd">언제든 취소 가능 · 취소 시 다음 결제일까지 이용</div></div><div style="margin-top:1.4rem;background:var(--surface);border:1px solid var(--border);padding:1.2rem"><div style="font-family:'DM Mono',monospace;font-size:.66rem;letter-spacing:.14em;color:var(--muted);margin-bottom:.8rem;text-transform:uppercase">연장 시 요금</div><div style="display:flex;flex-direction:column;gap:.45rem"><div style="display:flex;justify-content:space-between;align-items:center;font-size:.84rem"><span style="color:var(--muted)">1개월 → 3개월 연장</span><span style="font-family:'DM Mono',monospace;color:var(--accent)">₩29,800/월</span></div><div style="height:1px;background:var(--border)"></div><div style="display:flex;justify-content:space-between;align-items:center;font-size:.84rem"><span style="color:var(--muted)">1개월 → 6개월 연장</span><span style="font-family:'DM Mono',monospace;color:var(--gold)">₩24,800/월</span></div><div style="height:1px;background:var(--border)"></div><div style="display:flex;justify-content:space-between;align-items:center;font-size:.84rem"><span style="color:var(--muted)">3개월 → 6개월 연장</span><span style="font-family:'DM Mono',monospace;color:var(--gold)">₩24,800/월</span></div></div></div></div><div><div style="font-family:'DM Mono',monospace;font-size:.66rem;letter-spacing:.14em;color:var(--muted);margin-bottom:1.3rem;text-transform:uppercase">연장 타임라인 예시</div><div class="tl2"><div class="tli"><div class="tld a"><div class="tldot"></div></div><div><div class="tld2">DAY 01</div><div class="tlt">1개월 플랜 시작</div><div class="tls">₩49,000</div></div></div><div class="tli"><div class="tld b"><div class="tldot" style="background:var(--accent)"></div></div><div><div class="tld2">DAY 23</div><div class="tlt">연장 알림 수신</div><div class="tln">만료 7일 전 푸시 알림</div></div></div><div class="tli"><div class="tld b"><div class="tldot" style="background:var(--accent)"></div></div><div><div class="tld2">DAY 30</div><div class="tlt">3개월 또는 6개월 전환</div><div class="tls">₩29,800 / ₩24,800 적용</div></div></div><div class="tli"><div class="tld"><div class="tldot" style="opacity:.3"></div></div><div><div class="tld2">DAY 120</div><div class="tlt">3개월 완료 (예시)</div><div class="tln">총 ₩129,400 / 6개월 시 ₩178,600</div></div></div></div></div></div></section>
+<section style="background:var(--bg2)"><div style="max-width:880px;margin:0 auto"><div class="sl">WHY 3 MONTHS</div><h2 class="st">왜 <em>3개월</em>인가?</h2><div class="wg"><div class="wc"><div class="wn">01</div><div class="wt">채용 사이클 = 3개월</div><div class="wd">삼성전자 기준 서류→GSAT→면접→합격까지 정확히 3개월. 상/하반기 모두 동일합니다.</div></div><div class="wc"><div class="wn">02</div><div class="wt">습관 형성 임계점 66일</div><div class="wd">UCL 연구 결과, 새로운 행동이 자동화되는 데 평균 66일(약 2.2개월)이 소요됩니다.</div></div><div class="wc"><div class="wn">03</div><div class="wt">집중 학습 효과 임계점</div><div class="wd">하루 2시간 × 3개월이 실력 향상의 임계값. 더 길면 집중도 저하, 더 짧으면 효과 미흡.</div></div></div></div></section>
+<section id="mingle" style="position:relative;overflow:hidden">
+<div style="position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(123,92,248,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(123,92,248,.06) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 100% 80% at 50% 50%,black,transparent)"></div>
+<div style="position:absolute;top:-80px;left:50%;transform:translateX(-50%);width:700px;height:500px;background:radial-gradient(ellipse,rgba(179,136,255,.1),transparent 70%);pointer-events:none"></div>
+<div style="max-width:980px;margin:0 auto;position:relative;z-index:1">
+  <div class="sl">MEMBERS-ONLY EVENT</div>
+  <h2 class="st">Mingle with <em>Ringle</em></h2>
+  <p style="margin-top:1rem;color:var(--muted);font-size:.9rem;line-height:1.85;max-width:500px">3개월 이상 결제 회원 추첨 선발 &middot; 직무별 5인 그룹<br>비즈니스 세미나룸 + 케이터링 뷔페 + 현직자 커피챗</p>
+
+  <div style="margin-top:3rem;display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;max-width:860px" id="mg-grid">
+
+    <div style="background:var(--surface);border:1px solid var(--border);padding:2.2rem">
+      <div style="font-family:'DM Mono',monospace;font-size:.67rem;letter-spacing:.2em;color:var(--purple);text-transform:uppercase;margin-bottom:1.5rem">선발 조건</div>
+      <div style="display:flex;flex-direction:column;gap:1.1rem">
+        <div style="display:flex;gap:1rem;align-items:flex-start">
+          <div style="min-width:28px;height:28px;background:rgba(123,92,248,.15);border:1px solid rgba(123,92,248,.3);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-size:.78rem;font-weight:800;color:var(--accent);flex-shrink:0">01</div>
+          <div><div style="font-size:.87rem;margin-bottom:.2rem">3개월 이상 플랜 결제 완료</div><div style="font-family:'DM Mono',monospace;font-size:.7rem;color:var(--muted)">SEASON &middot; ALL-IN 플랜 해당</div></div>
+        </div>
+        <div style="height:1px;background:var(--border)"></div>
+        <div style="display:flex;gap:1rem;align-items:flex-start">
+          <div style="min-width:28px;height:28px;background:rgba(123,92,248,.15);border:1px solid rgba(123,92,248,.3);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-size:.78rem;font-weight:800;color:var(--accent);flex-shrink:0">02</div>
+          <div><div style="font-size:.87rem;margin-bottom:.2rem">직무 사전 선택 완료</div><div style="font-family:'DM Mono',monospace;font-size:.7rem;color:var(--muted)">IT / 마케팅 / 경영관리 / 영업<br>R&amp;D·생산 / 서비스직</div></div>
+        </div>
+        <div style="height:1px;background:var(--border)"></div>
+        <div style="display:flex;gap:1rem;align-items:flex-start">
+          <div style="min-width:28px;height:28px;background:rgba(123,92,248,.15);border:1px solid rgba(123,92,248,.3);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-size:.78rem;font-weight:800;color:var(--accent);flex-shrink:0">03</div>
+          <div><div style="font-size:.87rem;margin-bottom:.2rem">후기 작성 + 영상 인터뷰 동의</div><div style="font-family:'DM Mono',monospace;font-size:.7rem;color:var(--muted)">콘텐츠 활용 목적 (당일 촬영)</div></div>
+        </div>
+      </div>
+      <div style="margin-top:1.8rem;display:grid;grid-template-columns:1fr 1fr;gap:.6rem">
+        <div style="background:var(--bg2);border:1px solid var(--border);padding:.9rem">
+          <div style="font-family:'DM Mono',monospace;font-size:.6rem;color:var(--muted);margin-bottom:.3rem;letter-spacing:.1em">그룹 구성</div>
+          <div style="font-family:'Syne',sans-serif;font-size:1.9rem;font-weight:800;color:var(--accent)">5 : 1</div>
+          <div style="font-size:.73rem;color:var(--muted);margin-top:.1rem">직무별 5인 + 링글 멘토</div>
+        </div>
+        <div style="background:var(--bg2);border:1px solid var(--border);padding:.9rem">
+          <div style="font-family:'DM Mono',monospace;font-size:.6rem;color:var(--muted);margin-bottom:.3rem;letter-spacing:.1em">선발 방식</div>
+          <div style="font-family:'Syne',sans-serif;font-size:1.9rem;font-weight:800;color:var(--text)">추첨</div>
+          <div style="font-size:.73rem;color:var(--muted);margin-top:.1rem">자격 충족자 중 무작위</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:linear-gradient(135deg,rgba(123,92,248,.1),rgba(179,136,255,.04));border:1px solid var(--purple);padding:2.2rem;position:relative;overflow:hidden">
+      <div style="position:absolute;top:-20px;right:-20px;width:140px;height:140px;background:radial-gradient(circle,rgba(179,136,255,.13),transparent 70%);pointer-events:none"></div>
+      <div style="font-family:'DM Mono',monospace;font-size:.67rem;letter-spacing:.2em;color:var(--accent);text-transform:uppercase;margin-bottom:1.5rem">당일 구성</div>
+      <div style="display:flex;flex-direction:column;gap:.85rem">
+        <div style="display:flex;align-items:center;gap:.9rem"><div style="font-size:1.2rem;width:30px;text-align:center;flex-shrink:0">&#127968;</div><div><div style="font-size:.87rem">비즈니스 세미나룸 대여</div><div style="font-family:'DM Mono',monospace;font-size:.7rem;color:var(--muted)">비즈니스 세미나룸 운영</div></div></div>
+        <div style="height:1px;background:rgba(123,92,248,.2)"></div>
+        <div style="display:flex;align-items:center;gap:.9rem"><div style="font-size:1.2rem;width:30px;text-align:center;flex-shrink:0">&#127869;</div><div><div style="font-size:.87rem">케이터링 뷔페</div><div style="font-family:'DM Mono',monospace;font-size:.7rem;color:var(--muted)">식사하며 자유로운 직무 네트워킹</div></div></div>
+        <div style="height:1px;background:rgba(123,92,248,.2)"></div>
+        <div style="display:flex;align-items:center;gap:.9rem"><div style="font-size:1.2rem;width:30px;text-align:center;flex-shrink:0">&#9749;</div><div><div style="font-size:.87rem">현직자 커피챗 섭외</div><div style="font-family:'DM Mono',monospace;font-size:.7rem;color:var(--muted)">직무별 시니어 현직자 1:1 대화</div></div></div>
+        <div style="height:1px;background:rgba(123,92,248,.2)"></div>
+        <div style="display:flex;align-items:center;gap:.9rem"><div style="font-size:1.2rem;width:30px;text-align:center;flex-shrink:0">&#127916;</div><div><div style="font-size:.87rem">어드민나잇 진행 + 영상 촬영</div><div style="font-family:'DM Mono',monospace;font-size:.7rem;color:var(--muted)">콘텐츠 인터뷰 &middot; 후기 영상 제작</div></div></div>
+      </div>
+      <div style="margin-top:1.8rem;background:rgba(123,92,248,.12);border:1px solid rgba(123,92,248,.28);padding:.9rem 1rem">
+        <div style="font-family:'DM Mono',monospace;font-size:.64rem;color:var(--accent);letter-spacing:.1em;margin-bottom:.3rem">EXCLUSIVE BENEFIT</div>
+        <div style="font-size:.83rem;line-height:1.65">3개월+ 결제 회원에게만 주어지는<br><strong style="color:var(--text)">링글 AI 단독 오프라인 네트워킹</strong> 기회</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-top:2rem;max-width:860px">
+    <div style="font-family:'DM Mono',monospace;font-size:.64rem;letter-spacing:.16em;color:var(--muted);margin-bottom:.8rem;text-transform:uppercase">참여 가능 직무 트랙 (6개)</div>
+    <div style="display:flex;flex-wrap:wrap;gap:.5rem">
+      <span style="font-family:'DM Mono',monospace;font-size:.72rem;padding:.35rem .75rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.25);color:var(--accent)">IT</span>
+      <span style="font-family:'DM Mono',monospace;font-size:.72rem;padding:.35rem .75rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.25);color:var(--accent)">마케팅</span>
+      <span style="font-family:'DM Mono',monospace;font-size:.72rem;padding:.35rem .75rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.25);color:var(--accent)">경영관리</span>
+      <span style="font-family:'DM Mono',monospace;font-size:.72rem;padding:.35rem .75rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.25);color:var(--accent)">영업</span>
+      <span style="font-family:'DM Mono',monospace;font-size:.72rem;padding:.35rem .75rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.25);color:var(--accent)">R&amp;D &middot; 생산</span>
+      <span style="font-family:'DM Mono',monospace;font-size:.72rem;padding:.35rem .75rem;background:rgba(123,92,248,.1);border:1px solid rgba(123,92,248,.25);color:var(--accent)">서비스직</span>
+    </div>
+  </div>
+</div>
+</section>
+<style>@media(max-width:640px){#mg-grid{grid-template-columns:1fr!important}}
+/* ── 추가 섹션 스타일 ── */
+.section-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.67rem; letter-spacing: 0.25em; color: var(--purple-l); text-transform: uppercase; margin-bottom: 1.2rem; display: flex; align-items: center; gap: 1rem; }
+.section-eyebrow::before { content: ''; display: block; width: 2.5rem; height: 1px; background: linear-gradient(90deg, var(--purple), transparent); }
+.section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.5rem, 5vw, 5rem); font-weight: 300; line-height: 1; letter-spacing: -0.01em; margin-bottom: 1rem; }
+.section-title em { font-style: italic; color: var(--purple-l); }
+/* HOW IT WORKS */
+.how { background: var(--bg2); position: relative; overflow: hidden; }
+.how::before { content: ''; position: absolute; top: -200px; right: -200px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(124,58,237,0.08) 0%, transparent 70%); pointer-events: none; }
+.how-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 0; margin-top: 5rem; border: 1px solid var(--border); }
+.how-card { padding: 3rem 2rem; border-right: 1px solid var(--border); position: relative; overflow: hidden; transition: background 0.4s; }
+.how-card:last-child { border-right: none; }
+.how-card:hover { background: rgba(124,58,237,0.06); }
+.how-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--purple), var(--purple-l)); transform: scaleX(0); transform-origin: left; transition: transform 0.4s; }
+.how-card:hover::after { transform: scaleX(1); }
+.how-step { font-family: 'Cormorant Garamond', serif; font-size: 5rem; font-weight: 300; color: rgba(124,58,237,0.15); line-height: 1; margin-bottom: 1.5rem; transition: color 0.3s; }
+.how-card:hover .how-step { color: rgba(124,58,237,0.3); }
+.how-icon { font-size: 1.6rem; margin-bottom: 1rem; display: block; }
+.how-card h3 { font-size: 0.9rem; font-weight: 700; letter-spacing: 0.05em; margin-bottom: 1rem; color: var(--purple-xl); }
+.how-card p { font-size: 0.82rem; color: rgba(245,243,255,0.45); line-height: 1.8; font-weight: 300; }
+/* SERVICES */
+.services { background: var(--bg); }
+.services-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-top: 5rem; background: var(--border); }
+.svc-card { background: var(--bg); padding: 4rem 3rem; position: relative; overflow: hidden; transition: background 0.3s; }
+.svc-card:hover { background: var(--bg2); }
+.svc-glow { position: absolute; top: -80px; right: -80px; width: 280px; height: 280px; background: radial-gradient(circle, rgba(124,58,237,0.15) 0%, transparent 70%); pointer-events: none; opacity: 0; transition: opacity 0.4s; }
+.svc-card:hover .svc-glow { opacity: 1; }
+.svc-tag { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.2em; color: var(--purple-l); text-transform: uppercase; border: 1px solid var(--border2); padding: 0.3rem 0.8rem; display: inline-block; margin-bottom: 2rem; background: rgba(124,58,237,0.06); }
+.svc-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; font-weight: 300; margin-bottom: 1rem; letter-spacing: -0.01em; }
+.svc-card h3 em { font-style: italic; color: var(--purple-l); }
+.svc-desc { font-size: 0.85rem; color: rgba(245,243,255,0.5); line-height: 1.8; font-weight: 300; margin-bottom: 2.5rem; }
+.svc-list { list-style: none; display: flex; flex-direction: column; gap: 0.8rem; }
+.svc-list li { font-size: 0.82rem; color: rgba(245,243,255,0.65); display: flex; align-items: flex-start; gap: 0.8rem; font-weight: 300; line-height: 1.5; padding-bottom: 0.8rem; border-bottom: 1px solid var(--border); }
+.svc-list li:last-child { border-bottom: none; }
+.svc-list li::before { content: '→'; color: var(--purple-l); font-size: 0.75rem; flex-shrink: 0; margin-top: 0.1rem; font-family: 'DM Mono', monospace; }
+/* JOB TABS */
+.jobs { background: var(--bg2); }
+.tab-nav { display: flex; gap: 0; margin-top: 4rem; overflow-x: auto; scrollbar-width: none; border-bottom: 1px solid var(--border); }
+.tab-nav::-webkit-scrollbar { display: none; }
+.tab-btn { padding: 1rem 2rem; font-family: 'DM Mono', monospace; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mid); cursor: pointer; border: none; background: none; border-bottom: 2px solid transparent; margin-bottom: -1px; white-space: nowrap; transition: color 0.2s, border-color 0.2s; flex-shrink: 0; }
+.tab-btn.active { color: var(--purple-l); border-bottom-color: var(--purple); }
+.tab-btn:hover:not(.active) { color: var(--lavender); }
+.tab-pane { display: none; padding-top: 4rem; }
+.tab-pane.active { display: block; }
+.job-meta { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 4rem; }
+.job-title-row { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 300; margin-bottom: 1rem; }
+.job-title-row em { font-style: italic; color: var(--purple-l); }
+.job-desc-text { font-size: 0.88rem; color: rgba(245,243,255,0.5); line-height: 1.8; font-weight: 300; max-width: 600px; }
+.job-header-row { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 3rem; }
+/* job keywords grid (replaces company cards) */
+.job-keywords { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
+.job-kw-card { border: 1px solid var(--border); padding: 1.8rem; background: var(--bg); transition: all 0.3s; cursor: default; }
+.job-kw-card:hover { border-color: var(--border2); background: rgba(124,58,237,0.04); transform: translateY(-2px); }
+.kw-icon { font-size: 1.5rem; margin-bottom: 1rem; display: block; }
+.kw-title { font-size: 0.88rem; font-weight: 700; color: var(--purple-xl); margin-bottom: 0.5rem; }
+.kw-desc { font-size: 0.78rem; color: rgba(245,243,255,0.45); line-height: 1.7; font-weight: 300; }
+.kw-tags { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.35rem; padding-top: 0.8rem; border-top: 1px solid var(--border); }
+.kw-tag { font-size: 0.65rem; color: rgba(245,243,255,0.4); background: rgba(255,255,255,0.03); padding: 0.18rem 0.6rem; border: 1px solid transparent; font-weight: 300; }
+.job-kw-card:hover .kw-tag { border-color: var(--border); color: rgba(245,243,255,0.6); }
+.how-grid { grid-template-columns: repeat(2,1fr); }
+.services-layout { grid-template-columns: 1fr; }
+.how-grid { grid-template-columns: 1fr; }
+</style>
+<div class="div"></div><footer><div class="flo">Ringle <em>AI</em></div><div>취업 영어 전용 AI 멤버십 · BETA &nbsp;·&nbsp; © 2025 RINGLE INC. ALL RIGHTS RESERVED.</div></footer>
+<script>
+function switchTab(id, btn) {
+  document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    b.classList.remove('active');
+    b.style.color = 'var(--muted)';
+    b.style.borderBottom = '2px solid transparent';
+  });
+  var pane = document.getElementById('pane-' + id);
+  if (pane) pane.classList.add('active');
+  if (btn) {
+    btn.classList.add('active');
+    btn.style.color = 'var(--text)';
+    btn.style.borderBottom = '2px solid var(--purple)';
+  }
+}
+function st(m){document.getElementById('ta').classList.toggle('on',m==='auto');document.getElementById('tm').classList.toggle('on',m==='manual');document.getElementById('tmsg').textContent=m==='auto'?'만료 7일 전 알림 · 자동으로 다음 플랜 전환':'만료 전 대시보드에서 직접 연장 플랜 선택';document.getElementById('tmd').textContent=m==='auto'?'언제든 취소 가능 · 취소 시 다음 결제일까지 이용':'공고 일정에 따라 원하는 시점에 직접 연장';}</script>
+</body></html>
